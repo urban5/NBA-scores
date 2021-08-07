@@ -1,0 +1,227 @@
+:root{
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing:border-box;   
+}
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height:100%;
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    font-family: "Varela Round", "Courier New", monospace
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {
+      background-color: rgb(16, 18, 134);
+      text-decoration: underline;
+      border: solid 3px;
+      border-radius: 3vh 3vh 3vh 3vh;
+    }
+  
+  ul.topnav li a.active {
+    background-color: rgb(16, 18, 134);
+    border: solid 3px;
+    border-radius: 3vh 3vh 3vh 3vh;
+  }
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+
+
+div.content2{
+    position: relative;
+    background-color:#8ef5a0;
+    height: 40px;
+    width: 250px;
+    border: 5px solid #0d89d1;
+    float: down;
+    margin: 20px;
+    text-align: center;
+    -ms-text-combine-horizontal:digits;
+}
+
+div#prvi{
+    background-color: aqua;
+}
+
+.parent{
+    background-color: red;
+}
+
+.child-one{
+    position: absolute;
+    left: 10px;
+    background-color: red;
+}
+
+.child-two{
+    background-color: green;
+}
+
+.child-three{
+    background-color: violet;
+}
+
+.expanding{
+       
+    width:300px;
+    height:100px;
+    background-color: aqua;
+    border: 5px solid #0d89d1;
+    transition: height 0.3s;
+    text-align: center;
+}
+
+.expanding:hover{
+    height: 350px;
+    background-color: #8ef5a0;
+}
+
+.expanding:hover .testniklas{
+    display:none;
+    visibility: hidden;
+}
+
+.testniklas{
+    display: block;
+}
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border:3px solid rgb(42, 41, 41);
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    margin-top: 2px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: rgb(121, 117, 117);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+
+  .box{
+    height:75vh;
+    background-image: url('slike/ozadje.jpg');
+    background-size: cover;
+    background-position-y: center;
+    text-align: center;
+  }
+
+  #date-input{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1.5vh;
+    border-radius:3vh 0 0 3vh;
+    border:none;
+    outline:none;
+    width: 13%;
+    height: 6vh;
+    background-color: rgb(7, 67, 163);
+    text-align: center;
+    border: solid 0.3vh white;
+    border-right: none;
+    font-family: "Varela Round", "Courier New", monospace;
+    font-size:large;
+    font-variant-caps:titling-caps;
+    color:white;
+    font-weight: 700;
+}
+
+#submit-date{
+    position:relative;
+    display: inline-block;
+    left: -5px;
+    border-radius: 0 3vh 3vh 0;
+    border:none;
+    outline: none;
+    width:8%;
+    height: 6vh;
+    cursor:pointer;
+    background: #ffc107;
+    background-color: rgb(4, 49, 100);
+    text-align: center;
+    border: solid 0.3vh white;
+    border-left: none;
+    font-family: "Varela Round", "Courier New", monospace;
+    font-size: large;
+    color: white;
+    font-weight: 700;
+}
+.datum{
+    position: relative;
+    top:60vh;
+    width:100%;
+    text-align: center;
+}
+
+#napis{
+    font-size:xx-large;
+    color: white;
+    font-family: "Varela Round", "Courier New", monospace;
+    padding-bottom: 1%;
+    font-weight: 700;
+    position: relative;  
+}

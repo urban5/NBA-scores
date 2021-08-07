@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+    
+    $(function() {
+        $.ajax({
+            url: 'https://api.pushshift.io/reddit/submission/search?subreddit=nba_slovenija&size=5',
+            type: 'GET',
+            dataType: 'html',
+            success: function(data, status, xhr)
+            {
+                $("#json").html(data);
+                //document.write(data);
+            },
+            error: function(xhr, status, error)
+            {
+                $("#json").html("Error: " + status + " " + error);
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="json"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script>
+       
+        const url = 'https://api.pushshift.io/reddit/submission/search?subreddit=nba_slovenija&size=5';
+        async function getISS(){
+            const response = await fetch('https://api.pushshift.io/reddit/submission/search?subreddit=nba_slovenija&size=5');
+            const data = await response.json();
+         
+            //console.log(data);
+            window.a = data;
+        }   getISS(); 
+    </script>
+</head>
+<body>
+    <div id="json"></div>
+</body>
+</html>
